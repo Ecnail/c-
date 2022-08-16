@@ -40,4 +40,12 @@ class mitarbeiter
   {
     gehalt = g;
   }
+  
+  void show()
+  {
+  	cout << "Vorname: " << vorname << " | ";
+  	cout << "Nachname: " << nachname << " | ";
+  	cout << "Mitarbeiternummer: " << mitarbeiternummer << " | ";
+  	cout << "Gehalt: " << gehalt << endl << endl;
+  }
 };
