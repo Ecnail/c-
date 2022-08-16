@@ -59,3 +59,57 @@ class teller : public geschirr
     return flach;
   }
 };
+
+
+class tasse : public geschirr
+{
+	bool untertasse;
+	
+	public:
+		
+	tasse(float g, string f, string m, float p, bool u) :
+		geschirr(g, f, m, p),
+		untertasse(u)
+	{}
+	
+	bool getUntertasse()
+	{
+		return untertasse;
+	}
+};
+
+
+class schuessel : public geschirr
+{
+	bool deckel;
+	
+	public:
+		
+	schuessel(float g, string f, string m, float p, bool d) :
+		geschirr(g, f, m, p),
+		deckel(d)
+	{}
+	
+	bool getDeckel()
+	{
+		return deckel;
+	}
+};
+
+
+class glass : public geschirr
+{
+	int inhalt;
+	
+	public:
+		
+	glass(float g, string f, string m, float p, int i) :
+		geschirr(g, f, m, p),
+		inhalt(i)
+	{}
+	
+	int getInhalt()
+	{
+		return inhalt;
+	}
+};
